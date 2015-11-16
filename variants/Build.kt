@@ -6,7 +6,7 @@ import com.beust.kobalt.plugin.kotlin.*
 
 val p = kotlinProject {
 
-    name = "flavors"
+    name = "variants"
     group = "com.beust.kobalt.example"
     artifactId = name
     version = "0.1"
@@ -26,12 +26,20 @@ val p = kotlinProject {
         mainClass = "com.beust.kobalt.example.variants.MainKt"
     }
 
+    packageName = "com.beust.kobalt.example.variants"
+
     productFlavor("free") {
         description = "the free flavor"
+        buildConfig {
+            field("freeField", "String", "\"The free field\"")
+        }
     }
 
     productFlavor("pro") {
         description = "the pro flavor"
+        buildConfig {
+            field("proField", "Int", "42")
+        }
     }
 
     buildType("debug") {
