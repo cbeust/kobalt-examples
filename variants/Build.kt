@@ -29,14 +29,12 @@ val p = kotlinProject {
     packageName = "com.beust.kobalt.example.variants"
 
     productFlavor("free") {
-        description = "the free flavor"
         buildConfig {
             field("freeField", "String", "\"The free field\"")
         }
     }
 
     productFlavor("pro") {
-        description = "the pro flavor"
         buildConfig {
             field("proField", "Int", "42")
         }

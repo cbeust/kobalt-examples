@@ -11,8 +11,13 @@ val jp = javaProject {
     version = "0.1"
     buildDirectory = "javaBuild"
 
+    dependencies {
+        compile("joda-time:joda-time:2.5")
+    }
+
     assemble {
-        jar {}
+        jar {
+        }
     }
 }
 
