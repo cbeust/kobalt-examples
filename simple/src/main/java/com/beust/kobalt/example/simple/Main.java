@@ -1,7 +1,7 @@
 package com.beust.kobalt.example.simple;
 
-public class ExampleMain {
+public class Main {
 	public static void main(String[] argv) {
-		System.out.println("ExampleMain says hello");
+		System.out.println("Main says hello");
 	}
 }

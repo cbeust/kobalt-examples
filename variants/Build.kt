@@ -23,7 +23,7 @@ val p = kotlinProject {
     }
 
     application {
-        mainClass = "com.beust.kobalt.example.variants.MainFlavorKt"
+        mainClass = "com.beust.kobalt.example.variants.MainKt"
     }
 
     productFlavor("free") {

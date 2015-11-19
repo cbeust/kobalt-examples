@@ -27,6 +27,6 @@ val kp = kotlinProject(jp) {
     }
 
     application {
-        mainClass = "com.beust.kobalt.example.mixed.KotlinMainKt"
+        mainClass = "com.beust.kobalt.example.mixed.MainKt"
     }
 }
