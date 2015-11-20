@@ -25,3 +25,7 @@ Instanting a product: Pro product
 ```
 
 This project has two `Products.kt` source files in the `src/free/kotlin` and `src/pro/kotlin` directories respectively. The task you run decides which one gets compiled and run.
+
+# `android`
+
+A basic Android example.
