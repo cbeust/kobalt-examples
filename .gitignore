@@ -1,5 +1,7 @@
 kobaltBuild
+javaBuild
 .kobalt
 .idea/workspace.xml
-javaBuild
+.idea/tasks.xml
+out
 
