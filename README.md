@@ -29,3 +29,14 @@ This project has two `Products.kt` source files in the `src/free/kotlin` and `sr
 # `android`
 
 A basic Android example.
+
+# `android-flavors`
+
+An Android example showing resource merging and flavors. Try the following target:
+
+```
+./kobaltw installFreeDebug
+```
+
+Then launch the app on your device. Other targets of interest: `installProDebug` and `installFreeRelease` and `installProRelease`. Each of these will display their product flavor and build type on the main screen along with a different background color.
+
