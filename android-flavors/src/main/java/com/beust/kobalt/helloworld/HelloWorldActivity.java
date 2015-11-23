@@ -1,8 +1,9 @@
-package codepath.demos.helloworlddemo;
+package com.beust.kobalt.helloworld;
 
 import android.os.Bundle;
 import android.app.Activity;
 import android.view.Menu;
+import codepath.demos.helloworlddemo.R;
 
 public class HelloWorldActivity extends Activity {
 

@@ -10,7 +10,7 @@
         android:label="@string/app_name"
         android:theme="@style/AppTheme" >
         <activity
-            android:name="codepath.demos.helloworlddemo.HelloWorldActivity"
+            android:name="com.beust.kobalt.helloworld.HelloWorldActivity"
             android:label="@string/app_name" >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
