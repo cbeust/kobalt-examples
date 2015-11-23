@@ -42,9 +42,9 @@ Then launch the app called "Kobalt Helloworld" on your device. Other targets of 
 
  - `installFreeRelease`
  - `installProDebug`
- - `installProRelease`.
+ - `installProRelease`
 
  Each of these will display their product flavor and build type on the main screen along with a different background color (green for "free" and red for "pro") to demonstrate various layouts based on the product flavor.
- 
+
 
 
