@@ -38,5 +38,5 @@ An Android example showing resource merging and flavors. Try the following targe
 ./kobaltw installFreeDebug
 ```
 
-Then launch the app on your device. Other targets of interest: `installProDebug` and `installFreeRelease` and `installProRelease`. Each of these will display their product flavor and build type on the main screen along with a different background color.
+Then launch the app called "Kobalt Helloworld" on your device. Other targets of interest: `installProDebug` and `installFreeRelease` and `installProRelease`. Each of these will display their product flavor and build type on the main screen along with a different background color.
 
