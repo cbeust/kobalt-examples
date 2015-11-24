@@ -7,7 +7,7 @@ import com.beust.kobalt.plugin.java.*
 
 val p = javaProject {
 
-    name = "codepath.apps.demointroandroid"
+    name = "kobalt.helloworld"
     group = "com.example"
     artifactId = name
     version = "0.1"
@@ -15,7 +15,7 @@ val p = javaProject {
     android {
         compileSdkVersion = "23"
         buildToolsVersion = "23.0.1"
-        applicationId = "codepath.demos.helloworlddemo"
+        applicationId = "com.beust.kobalt.android.helloworld"
     }
 
     productFlavor("pro") {
