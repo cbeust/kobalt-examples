@@ -18,16 +18,32 @@ val p = javaProject {
         applicationId = "com.beust.kobalt.android.helloworld"
     }
 
-    productFlavor("pro") {
+    productFlavor("free") {
+        buildConfig {
+            field("freeField", "String", "\"The free field\"")
+            field("conflictProductFlavor", "String", "\"Defined by free\"")
+        }
     }
 
-    productFlavor("free") {
+    productFlavor("pro") {
+        buildConfig {
+            field("proField", "String", "\"The pro field\"")
+            field("conflictProductFlavor", "String", "\"Defined by pro\"")
+        }
     }
 
     buildType("debug") {
+        buildConfig {
+            field("debugField", "String", "\"The debug field\"")
+            field("conflictBuildType", "String", "\"Defined by debug\"")
+        }
     }
 
     buildType("release") {
+        buildConfig {
+            field("releaseField", "String", "\"The release field\"")
+            field("conflictBuildType", "String", "\"Defined by release\"")
+        }
     }
 
     dependencies {
