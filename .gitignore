@@ -4,4 +4,5 @@ javaBuild
 .idea/workspace.xml
 .idea/tasks.xml
 out
+gen
 
