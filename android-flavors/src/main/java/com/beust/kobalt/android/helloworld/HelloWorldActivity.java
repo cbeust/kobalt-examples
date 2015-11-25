@@ -2,7 +2,6 @@ package com.beust.kobalt.android.helloworld;
 
 import android.app.Activity;
 import android.os.Bundle;
-import android.util.Log;
 import android.view.Menu;
 
 public class HelloWorldActivity extends Activity {
@@ -10,10 +9,6 @@ public class HelloWorldActivity extends Activity {
 
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
-		Log.d(TAG, "debug field: " + BuildConfig.debugField);
-		Log.d(TAG, "conflictBuildType field: " + BuildConfig.conflictBuildType);
-		Log.d(TAG, "freeField field: " + BuildConfig.freeField);
-		Log.d(TAG, "conflictProductFlavor field: " + BuildConfig.conflictProductFlavor);
 		super.onCreate(savedInstanceState);
 		setContentView(R.layout.activity_hello_world);
 	}
