@@ -12,7 +12,7 @@ val jp = javaProject {
     buildDirectory = "javaBuild"
 
     dependencies {
-        compile("joda-time:joda-time:2.5")
+        compile("joda-time:joda-time:2.9.1")
     }
 
     assemble {

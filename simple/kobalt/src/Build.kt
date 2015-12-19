@@ -1,6 +1,5 @@
 import com.beust.kobalt.*
 import com.beust.kobalt.plugin.application.*
-import com.beust.kobalt.plugin.dokka.*
 import com.beust.kobalt.plugin.packaging.*
 import com.beust.kobalt.plugin.java.*
 
@@ -20,11 +19,4 @@ val p = javaProject {
         mainClass = "com.beust.kobalt.example.simple.Main"
     }
 
-    dokka {
-        outputFormat = "markdown"
-    }
-
-    dokka {
-        outputFormat = "html"
-    }
 }
