@@ -17,12 +17,12 @@ val p = javaProject {
         buildToolsVersion = "23.0.1"
         applicationId = "com.beust.kobalt.android.helloworld"
 
-        signingConfig("release") {
-            storeFile = "other.keystore"
-            storePassword = "android"
-            keyAlias = "androiddebugkey"
-            keyPassword = "android"
-        }
+//        signingConfig("release") {
+//            storeFile = homeDir(".android", "debug.keystore")
+//            storePassword = "android"
+//            keyAlias = "androiddebugkey"
+//            keyPassword = "android"
+//        }
     }
 
     productFlavor("free") {
