@@ -44,11 +44,21 @@ val p = javaProject {
     }
 
     buildType("release") {
+        minifyEnabled = true
+//        proguardFile = getDefaultProguardFile("proguard-android.txt")
+
         buildConfig {
             field("releaseField", "String", "\"The release field\"")
         }
     }
 
     dependencies {
+        compile("com.android.support:appcompat-v7:aar:23.0.1"
+                ,"com.android.support:design:aar:23.0.1"
+        )
+    }
+
+    javaCompiler {
+        args("-source", "1.6", "-target", "1.6")
     }
 }

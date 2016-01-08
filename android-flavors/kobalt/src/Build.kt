@@ -9,8 +9,7 @@ import com.beust.kobalt.plugin.java.javaProject
 import com.beust.kobalt.plugin.kotlin.kotlinCompiler
 import com.beust.kobalt.plugin.kotlin.kotlinProject
 import com.beust.kobalt.plugin.packaging.assemble
-import com.beust.kobalt.plugin.publish.github
-import com.beust.kobalt.plugin.publish.jcenter
+import com.beust.kobalt.plugin.publish.*
 import com.beust.kobalt.test
 import java.io.File
 import java.nio.file.Files
@@ -127,7 +126,7 @@ val kobalt = kotlinProject(wrapper) {
         file("$buildDirectory/libs/$name-$version.zip", "$name/$version/$name-$version.zip")
     }
 
-    jcenter {
+    bintray {
         publish = true
     }
 }
