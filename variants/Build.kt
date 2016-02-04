@@ -4,7 +4,7 @@ import com.beust.kobalt.plugin.application.*
 import com.beust.kobalt.plugin.packaging.*
 import com.beust.kobalt.plugin.kotlin.*
 
-val p = kotlinProject {
+val p = project {
 
     name = "variants"
     group = "com.beust.kobalt.example"

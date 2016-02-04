@@ -4,7 +4,7 @@ import com.beust.kobalt.plugin.kotlin.*
 
 val repos = repos()
 
-val p = kotlinProject {
+val p = project {
 
     name = "webservice"
     group = "com.example"

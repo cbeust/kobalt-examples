@@ -7,7 +7,7 @@ import com.beust.kobalt.plugin.dokka.*
 import com.beust.kobalt.plugin.java.javaCompiler
 import com.beust.kobalt.plugin.java.javaProject
 import com.beust.kobalt.plugin.kotlin.kotlinCompiler
-import com.beust.kobalt.plugin.kotlin.kotlinProject
+import com.beust.kobalt.plugin.kotlin.project
 import com.beust.kobalt.plugin.packaging.assemble
 import com.beust.kobalt.plugin.publish.*
 import com.beust.kobalt.test
@@ -47,7 +47,7 @@ val wrapper = javaProject {
     }
 }
 
-val kobalt = kotlinProject(wrapper) {
+val kobalt = project(wrapper) {
     name = "kobalt"
     group = "com.beust"
     artifactId = name

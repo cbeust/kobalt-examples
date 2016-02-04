@@ -21,7 +21,7 @@ val jp = javaProject {
     }
 }
 
-val kp = kotlinProject(jp) {
+val kp = project(jp) {
     name = "mixed-kotlin"
     group = "com.beust.kobalt.mixed"
     artifactId = name
