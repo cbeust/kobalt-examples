@@ -5,7 +5,7 @@ import com.beust.kobalt.plugin.packaging.assemble
 import com.beust.kobalt.plugin.android.*
 import com.beust.kobalt.plugin.java.*
 
-val p = javaProject {
+val p = project {
 
     name = "kobalt.helloworld"
     group = "com.example"

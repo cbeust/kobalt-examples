@@ -1,20 +1,17 @@
 import com.beust.kobalt.*
 import com.beust.kobalt.plugin.packaging.assemble
-import com.beust.kobalt.plugin.android.android
+import com.beust.kobalt.plugin.android.*
 import com.beust.kobalt.plugin.java.*
 
-val r = repos(file("/Users/beust/adt-bundle-mac-x86_64-20140702/sdk/extras/android/m2repository"))
+//val pl = plugins("com.beust:kobalt-android:0.23")
+val pl = plugins(file(homeDir("kotlin/kobalt-android/kobaltBuild/libs/kobalt-android-0.26.jar")))
 
-val p = javaProject {
+val p = project {
 
     name = "codepath.apps.demointroandroid"
     group = "com.example"
     artifactId = name
     version = "0.1"
-
-    sourceDirectories {
-        path("app/src/main/java/")
-    }
 
     android {
         compileSdkVersion = "17"
@@ -23,8 +20,8 @@ val p = javaProject {
     }
 
     dependencies {
-        compile(file("app/libs/android-async-http-1.4.3.jar"),
-                "com.android.support:support-v4:aar:21.0.3")
+        compile(file("libs/android-async-http-1.4.3.jar"),
+                "com.android.support:support-v4:21.0.3")
     }
 
     dependenciesTest {

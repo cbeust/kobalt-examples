@@ -4,7 +4,7 @@ import com.beust.kobalt.plugin.packaging.*
 import com.beust.kobalt.plugin.kotlin.*
 import com.beust.kobalt.plugin.java.*
 
-val jp = javaProject {
+val jp = project {
     name = "mixed-java"
     group = "com.beust.kobalt.mixed"
     artifactId = name
