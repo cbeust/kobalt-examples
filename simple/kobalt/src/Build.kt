@@ -29,7 +29,7 @@ val p = project {
     }
 
     test {
-        configName = "All"
+        name = "All"
         args("src/test/resources/testng.xml")
     }
 
