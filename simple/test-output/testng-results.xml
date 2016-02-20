@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="0" total="2" passed="2">
+  <reporter-output>
+  </reporter-output>
+  <suite name="Kobalt" duration-ms="15" started-at="2016-02-20T18:39:42Z" finished-at="2016-02-20T18:39:42Z">
+    <groups>
+      <group name="broken">
+        <method signature="ATest.broken()[pri:0, instance:com.beust.kobalt.example.ATest@96532d6]" name="broken" class="com.beust.kobalt.example.ATest"/>
+      </group> <!-- broken -->
+    </groups>
+    <test name="Main" duration-ms="15" started-at="2016-02-20T18:39:42Z" finished-at="2016-02-20T18:39:42Z">
+      <class name="com.beust.kobalt.example.ATest">
+        <test-method status="PASS" signature="broken()[pri:0, instance:com.beust.kobalt.example.ATest@96532d6]" name="broken" duration-ms="5" started-at="2016-02-20T10:39:42Z" finished-at="2016-02-20T10:39:42Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- broken -->
+        <test-method status="PASS" signature="works()[pri:0, instance:com.beust.kobalt.example.ATest@96532d6]" name="works" duration-ms="0" started-at="2016-02-20T10:39:42Z" finished-at="2016-02-20T10:39:42Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- works -->
+      </class> <!-- com.beust.kobalt.example.ATest -->
+    </test> <!-- Main -->
+  </suite> <!-- Kobalt -->
+</testng-results>

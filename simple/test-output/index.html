@@ -1,0 +1,319 @@
+<!DOCTYPE html>
+
+<html>
+  <head>
+  <title>TestNG reports</title>
+
+    <link type="text/css" href="testng-reports.css" rel="stylesheet" />  
+    <script type="text/javascript" src="jquery-1.7.1.min.js"></script>
+    <script type="text/javascript" src="testng-reports.js"></script>
+    <script type="text/javascript" src="https://www.google.com/jsapi"></script>
+    <script type='text/javascript'>
+      google.load('visualization', '1', {packages:['table']});
+      google.setOnLoadCallback(drawTable);
+      var suiteTableInitFunctions = new Array();
+      var suiteTableData = new Array();
+    </script>
+    <!--
+      <script type="text/javascript" src="jquery-ui/js/jquery-ui-1.8.16.custom.min.js"></script>
+     -->
+  </head>
+
+  <body>
+    <div class="top-banner-root">
+      <span class="top-banner-title-font">Test results</span>
+      <br/>
+      <span class="top-banner-font-1">1 suite</span>
+    </div> <!-- top-banner-root -->
+    <div class="navigator-root">
+      <div class="navigator-suite-header">
+        <span>All suites</span>
+        <a href="#" class="collapse-all-link" title="Collapse/expand all the suites">
+          <img class="collapse-all-icon" src="collapseall.gif">
+          </img> <!-- collapse-all-icon -->
+        </a> <!-- collapse-all-link -->
+      </div> <!-- navigator-suite-header -->
+      <div class="suite">
+        <div class="rounded-window">
+          <div class="suite-header light-rounded-window-top">
+            <a href="#" class="navigator-link" panel-name="suite-Kobalt">
+              <span class="suite-name border-passed">Kobalt</span>
+            </a> <!-- navigator-link -->
+          </div> <!-- suite-header light-rounded-window-top -->
+          <div class="navigator-suite-content">
+            <div class="suite-section-title">
+              <span>Info</span>
+            </div> <!-- suite-section-title -->
+            <div class="suite-section-content">
+              <ul>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="test-xml-Kobalt">
+                    <span>C:\Users\cbeust\kotlin\kobalt-examples\simple\src\test\resources\testng.xml</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="testlist-Kobalt">
+                    <span class="test-stats">1 test</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="group-Kobalt">
+                    <span>1 group</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="times-Kobalt">
+                    <span>Times</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="reporter-Kobalt">
+                    <span>Reporter output</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="ignored-methods-Kobalt">
+                    <span>Ignored methods</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="chronological-Kobalt">
+                    <span>Chronological view</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+              </ul>
+            </div> <!-- suite-section-content -->
+            <div class="result-section">
+              <div class="suite-section-title">
+                <span>Results</span>
+              </div> <!-- suite-section-title -->
+              <div class="suite-section-content">
+                <ul>
+                  <li>
+                    <span class="method-stats">2 methods,   2 passed</span>
+                  </li>
+                  <li>
+                    <span class="method-list-title passed">Passed methods</span>
+                    <span class="show-or-hide-methods passed">
+                      <a href="#" panel-name="suite-Kobalt" class="hide-methods passed suite-Kobalt"> (hide)</a> <!-- hide-methods passed suite-Kobalt -->
+                      <a href="#" panel-name="suite-Kobalt" class="show-methods passed suite-Kobalt"> (show)</a> <!-- show-methods passed suite-Kobalt -->
+                    </span>
+                    <div class="method-list-content passed suite-Kobalt">
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Kobalt" title="com.beust.kobalt.example.ATest" hash-for-method="broken">broken</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Kobalt" title="com.beust.kobalt.example.ATest" hash-for-method="works">works</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                    </div> <!-- method-list-content passed suite-Kobalt -->
+                  </li>
+                </ul>
+              </div> <!-- suite-section-content -->
+            </div> <!-- result-section -->
+          </div> <!-- navigator-suite-content -->
+        </div> <!-- rounded-window -->
+      </div> <!-- suite -->
+    </div> <!-- navigator-root -->
+    <div class="wrapper">
+      <div class="main-panel-root">
+        <div panel-name="suite-Kobalt" class="panel Kobalt">
+          <div class="suite-Kobalt-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">com.beust.kobalt.example.ATest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="broken">
+                  </a> <!-- broken -->
+                  <span class="method-name">broken</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="works">
+                  </a> <!-- works -->
+                  <span class="method-name">works</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Kobalt-class-passed -->
+        </div> <!-- panel Kobalt -->
+        <div panel-name="test-xml-Kobalt" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">C:\Users\cbeust\kotlin\kobalt-examples\simple\src\test\resources\testng.xml</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <pre>
+&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;
+&lt;!DOCTYPE suite SYSTEM &quot;http://testng.org/testng-1.0.dtd&quot;&gt;
+&lt;suite guice-stage=&quot;DEVELOPMENT&quot; verbose=&quot;2&quot; name=&quot;Kobalt&quot;&gt;
+  &lt;test name=&quot;Main&quot;&gt;
+    &lt;packages&gt;
+      &lt;package name=&quot;com.beust.*&quot;/&gt;
+    &lt;/packages&gt;
+    &lt;classes&gt;
+      &lt;class name=&quot;com.beust.kobalt.example.ATest&quot;/&gt;
+      &lt;class name=&quot;com.beust.kobalt.example.simple.Main&quot;/&gt;
+      &lt;class name=&quot;com.beust.jcommander.converters.BaseConverter&quot;/&gt;
+      &lt;class name=&quot;com.beust.jcommander.converters.BigDecimalConverter&quot;/&gt;
+      &lt;class name=&quot;com.beust.jcommander.converters.BooleanConverter&quot;/&gt;
+      &lt;class name=&quot;com.beust.jcommander.converters.CommaParameterSplitter&quot;/&gt;
+      &lt;class name=&quot;com.beust.jcommander.converters.DoubleConverter&quot;/&gt;
+      &lt;class name=&quot;com.beust.jcommander.converters.FileConverter&quot;/&gt;
+      &lt;class name=&quot;com.beust.jcommander.converters.FloatConverter&quot;/&gt;
+      &lt;class name=&quot;com.beust.jcommander.converters.IntegerConverter&quot;/&gt;
+      &lt;class name=&quot;com.beust.jcommander.converters.IParameterSplitter&quot;/&gt;
+      &lt;class name=&quot;com.beust.jcommander.converters.ISO8601DateConverter&quot;/&gt;
+      &lt;class name=&quot;com.beust.jcommander.converters.LongConverter&quot;/&gt;
+      &lt;class name=&quot;com.beust.jcommander.converters.NoConverter&quot;/&gt;
+      &lt;class name=&quot;com.beust.jcommander.converters.PathConverter&quot;/&gt;
+      &lt;class name=&quot;com.beust.jcommander.converters.StringConverter&quot;/&gt;
+      &lt;class name=&quot;com.beust.jcommander.converters.URIConverter&quot;/&gt;
+      &lt;class name=&quot;com.beust.jcommander.converters.URLConverter&quot;/&gt;
+      &lt;class name=&quot;com.beust.jcommander.defaultprovider.PropertyFileDefaultProvider&quot;/&gt;
+      &lt;class name=&quot;com.beust.jcommander.DynamicParameter&quot;/&gt;
+      &lt;class name=&quot;com.beust.jcommander.FuzzyMap$IKey&quot;/&gt;
+      &lt;class name=&quot;com.beust.jcommander.FuzzyMap&quot;/&gt;
+      &lt;class name=&quot;com.beust.jcommander.IDefaultProvider&quot;/&gt;
+      &lt;class name=&quot;com.beust.jcommander.internal.Console&quot;/&gt;
+      &lt;class name=&quot;com.beust.jcommander.internal.DefaultConsole&quot;/&gt;
+      &lt;class name=&quot;com.beust.jcommander.internal.DefaultConverterFactory&quot;/&gt;
+      &lt;class name=&quot;com.beust.jcommander.internal.JDK6Console&quot;/&gt;
+      &lt;class name=&quot;com.beust.jcommander.internal.Lists&quot;/&gt;
+      &lt;class name=&quot;com.beust.jcommander.internal.Maps&quot;/&gt;
+      &lt;class name=&quot;com.beust.jcommander.internal.Nullable&quot;/&gt;
+      &lt;class name=&quot;com.beust.jcommander.internal.Sets&quot;/&gt;
+      &lt;class name=&quot;com.beust.jcommander.IParameterValidator&quot;/&gt;
+      &lt;class name=&quot;com.beust.jcommander.IParameterValidator2&quot;/&gt;
+      &lt;class name=&quot;com.beust.jcommander.IStringConverter&quot;/&gt;
+      &lt;class name=&quot;com.beust.jcommander.IStringConverterFactory&quot;/&gt;
+      &lt;class name=&quot;com.beust.jcommander.IValueValidator&quot;/&gt;
+      &lt;class name=&quot;com.beust.jcommander.IVariableArity&quot;/&gt;
+      &lt;class name=&quot;com.beust.jcommander.JCommander$1&quot;/&gt;
+      &lt;class name=&quot;com.beust.jcommander.JCommander$DefaultVariableArity&quot;/&gt;
+      &lt;class name=&quot;com.beust.jcommander.JCommander$ProgramName&quot;/&gt;
+      &lt;class name=&quot;com.beust.jcommander.JCommander&quot;/&gt;
+      &lt;class name=&quot;com.beust.jcommander.MissingCommandException&quot;/&gt;
+      &lt;class name=&quot;com.beust.jcommander.Parameter&quot;/&gt;
+      &lt;class name=&quot;com.beust.jcommander.ParameterDescription&quot;/&gt;
+      &lt;class name=&quot;com.beust.jcommander.ParameterException&quot;/&gt;
+      &lt;class name=&quot;com.beust.jcommander.Parameterized&quot;/&gt;
+      &lt;class name=&quot;com.beust.jcommander.Parameters&quot;/&gt;
+      &lt;class name=&quot;com.beust.jcommander.ParametersDelegate&quot;/&gt;
+      &lt;class name=&quot;com.beust.jcommander.ResourceBundle&quot;/&gt;
+      &lt;class name=&quot;com.beust.jcommander.StringKey&quot;/&gt;
+      &lt;class name=&quot;com.beust.jcommander.Strings&quot;/&gt;
+      &lt;class name=&quot;com.beust.jcommander.validators.NoValidator&quot;/&gt;
+      &lt;class name=&quot;com.beust.jcommander.validators.NoValueValidator&quot;/&gt;
+      &lt;class name=&quot;com.beust.jcommander.validators.PositiveInteger&quot;/&gt;
+      &lt;class name=&quot;com.beust.jcommander.WrappedParameter&quot;/&gt;
+      &lt;class name=&quot;com.beust.kobalt.example.simple.Main&quot;/&gt;
+      &lt;class name=&quot;com.beust.testng.TestNG&quot;/&gt;
+      &lt;class name=&quot;com.beust.testng.TestNGAntTask&quot;/&gt;
+    &lt;/classes&gt;
+  &lt;/test&gt; &lt;!-- Main --&gt;
+&lt;/suite&gt; &lt;!-- Kobalt --&gt;
+            </pre>
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="testlist-Kobalt" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Tests for Kobalt</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <ul>
+              <li>
+                <span class="test-name">Main (58 classes)</span>
+              </li>
+            </ul>
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="group-Kobalt" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Groups for Kobalt</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <div class="test-group">
+              <span class="test-group-name">broken</span>
+              <br/>
+              <div class="method-in-group">
+                <span class="method-in-group-name">broken</span>
+                <br/>
+              </div> <!-- method-in-group -->
+            </div> <!-- test-group -->
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="times-Kobalt" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Times for Kobalt</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <div class="times-div">
+              <script type="text/javascript">
+suiteTableInitFunctions.push('tableData_Kobalt');
+function tableData_Kobalt() {
+var data = new google.visualization.DataTable();
+data.addColumn('number', 'Number');
+data.addColumn('string', 'Method');
+data.addColumn('string', 'Class');
+data.addColumn('number', 'Time (ms)');
+data.addRows(2);
+data.setCell(0, 0, 0)
+data.setCell(0, 1, 'broken')
+data.setCell(0, 2, 'com.beust.kobalt.example.ATest')
+data.setCell(0, 3, 5);
+data.setCell(1, 0, 1)
+data.setCell(1, 1, 'works')
+data.setCell(1, 2, 'com.beust.kobalt.example.ATest')
+data.setCell(1, 3, 0);
+window.suiteTableData['Kobalt']= { tableData: data, tableDiv: 'times-div-Kobalt'}
+return data;
+}
+              </script>
+              <span class="suite-total-time">Total running time: 5 ms</span>
+              <div id="times-div-Kobalt">
+              </div> <!-- times-div-Kobalt -->
+            </div> <!-- times-div -->
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="reporter-Kobalt" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Reporter output for Kobalt</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="ignored-methods-Kobalt" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">0 ignored methods</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="chronological-Kobalt" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Methods in chronological order</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.beust.kobalt.example.ATest</div> <!-- chronological-class-name -->
+              <div class="test-method">
+                <span class="method-name">broken</span>
+                <span class="method-start">0 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">works</span>
+                <span class="method-start">5 ms</span>
+              </div> <!-- test-method -->
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+      </div> <!-- main-panel-root -->
+    </div> <!-- wrapper -->
+  </body>
+</html>
