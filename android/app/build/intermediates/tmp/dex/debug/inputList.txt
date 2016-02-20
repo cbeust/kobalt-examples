@@ -1,5 +1,0 @@
-/Users/beust/android/intro_android_demo/app/build/intermediates/classes/debug
-/Users/beust/android/intro_android_demo/app/build/intermediates/pre-dexed/debug/support-annotations-21.0.3-c209c2d2b2a6db95a9e4dc8a91c33f4cc40eb920.jar
-/Users/beust/android/intro_android_demo/app/build/intermediates/pre-dexed/debug/android-async-http-1.4.3-13bafd6b421cdf3436b157799be511615d0e434e.jar
-/Users/beust/android/intro_android_demo/app/build/intermediates/pre-dexed/debug/internal_impl-21.0.3-da22ecbddd3e312a3cd1c56c810dc0ba9f991827.jar
-/Users/beust/android/intro_android_demo/app/build/intermediates/pre-dexed/debug/classes-43b69d9db700ac84fc38ca9f21372107269e0c91.jar
