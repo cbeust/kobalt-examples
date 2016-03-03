@@ -14,7 +14,6 @@ val p = project {
     group = "com.example"
     artifactId = name
     version = "0.1"
-    directory = "app"
 
     android {
         compileSdkVersion = "17"
@@ -23,11 +22,7 @@ val p = project {
     }
 
     dependencies {
-<<<<<<< HEAD
         compile(file("libs/android-async-http-1.4.3.jar"),
-=======
-        compile(file("app/libs/android-async-http-1.4.3.jar"),
->>>>>>> Update.
                 "com.android.support:support-v4:21.0.3")
     }
 
