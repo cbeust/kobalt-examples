@@ -5,8 +5,11 @@ import com.beust.kobalt.plugin.packaging.assemble
 import com.beust.kobalt.plugin.android.*
 import com.beust.kobalt.plugin.java.*
 
-//val pl = plugins("com.beust:kobalt-android:0.43")
-val pl = plugins(file(homeDir("kotlin/kobalt-android/kobaltBuild/libs/kobalt-android-0.44.jar")))
+val pl = plugins(
+    "com.beust:kobalt-android:0.52"
+//    file(homeDir("kotlin/kobalt-android/kobaltBuild/libs/kobalt-android-0.52.jar"))
+    )
+
 
 val p = project {
 
@@ -56,8 +59,8 @@ val p = project {
     }
 
     dependencies {
-        compile("com.android.support:appcompat-v7:23.0.1"
-                ,"com.android.support:design:23.0.1"
+        compile("com.android.support:appcompat-v7:aar:23.0.1"
+                ,"com.android.support:design:aar:23.0.1"
         )
     }
 
