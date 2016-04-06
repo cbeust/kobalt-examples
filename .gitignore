@@ -6,4 +6,5 @@ javaBuild
 out
 gen
 .DS_Store
+classes/
 
