@@ -5,8 +5,8 @@ import com.beust.kobalt.plugin.android.*
 import com.beust.kobalt.plugin.java.*
 
 val pl = plugins(
-    "com.beust:kobalt-android:0.63"
-//    file(homeDir("kotlin/kobalt-android/kobaltBuild/libs/kobalt-android-0.63.jar"))
+    "com.beust:kobalt-android:0.64"
+//    file(homeDir("kotlin/kobalt-android/kobaltBuild/libs/kobalt-android-0.64.jar"))
     )
 
 /**
