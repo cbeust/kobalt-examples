@@ -21,7 +21,7 @@ val javaAndroid = project {
     directory = name
 
     android {
-        compileSdkVersion = "17"
+        compileSdkVersion = "23"
         buildToolsVersion = "23.0.1"
         applicationId = "com.sample"
     }
