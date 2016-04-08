@@ -5,14 +5,23 @@ import com.beust.kobalt.plugin.android.*
 import com.beust.kobalt.plugin.java.*
 
 val pl = plugins(
-    "com.beust:kobalt-android:0.76"
-//    file(homeDir("kotlin/kobalt-android/kobaltBuild/libs/kobalt-android-0.76.jar"))
+    "com.beust:kobalt-android:0.77"
+//    file(homeDir("kotlin/kobalt-android/kobaltBuild/libs/kobalt-android-0.77.jar"))
     )
+
+object Versions {
+    val compileSdk = "23"
+    val supportV4 = "23.0.1"
+    val buildTools = "23.0.1"
+    val appCompat = "23.0.1"
+    val appCompatV7 = "23.0.1"
+    val design = "23.0.1"
+}
 
 /**
  * A simple Android project.
  */
-val javaAndroid = project {
+val simpleJavaAndroid = project {
 
     name = "simpleJavaAndroid"
     group = "com.example"
@@ -21,8 +30,8 @@ val javaAndroid = project {
     directory = name
 
     android {
-        compileSdkVersion = "23"
-        buildToolsVersion = "23.0.1"
+        compileSdkVersion = Versions.compileSdk
+        buildToolsVersion = Versions.buildTools
         applicationId = "com.sample"
     }
 }
@@ -30,7 +39,7 @@ val javaAndroid = project {
 /**
  * An advanced Java Android project.
  */
-val kotlinAndroid = project {
+val advancedJavaAndroid = project {
 
     name = "advancedJavaAndroid"
     group = "com.example"
@@ -45,8 +54,7 @@ val kotlinAndroid = project {
     }
 
     dependencies {
-        compile(file("libs/android-async-http-1.4.3.jar"),
-                "com.android.support:support-v4:aar:21.0.3")
+        compile(file("libs/android-async-http-1.4.3.jar"))
     }
 
     assemble {
@@ -65,8 +73,8 @@ val androidFlavors = project {
     directory = name
 
     android {
-        compileSdkVersion = "23"
-        buildToolsVersion = "23.0.1"
+        compileSdkVersion = Versions.compileSdk
+        buildToolsVersion = Versions.buildTools
         applicationId = "com.beust.kobalt.android.helloworld"
 
 //        signingConfig("release") {
@@ -105,8 +113,8 @@ val androidFlavors = project {
     }
 
     dependencies {
-        compile("com.android.support:appcompat-v7:aar:23.0.1"
-                ,"com.android.support:design:aar:23.0.1"
+        compile("com.android.support:appcompat-v7:aar:${Versions.appCompatV7}"
+                ,"com.android.support:design:aar:${Versions.design}"
         )
     }
 
@@ -165,6 +173,7 @@ val mixed = project {
 /**
  * Creating a war file
  */
+ /*
 val webService = project {
 
     name = "webservice"
@@ -183,3 +192,5 @@ val webService = project {
         }
     }
 }
+*/
+

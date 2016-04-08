@@ -10,5 +10,5 @@ jdk:
 
 install: true
 
-script: ./kobaltw --log 2 simpleJavaAndroid:assemble androidFlavors:assembleFreeDebug flavors:assemble mixed:assemble 
+script: ./kobaltw --log 2 simpleJavaAndroid:assemble advancedJavaAndroid:assemble androidFlavors:assembleFreeDebug flavors:assemble mixed:assemble 
 
