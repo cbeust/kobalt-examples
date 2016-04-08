@@ -2,6 +2,7 @@ cache:
     directories:
     - $HOME/.m2
     - $HOME/.kobalt
+    - $HOME/.android
 
 language: java
 
