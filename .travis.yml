@@ -11,5 +11,5 @@ jdk:
 
 install: true
 
-script: ./kobaltw assemble --log 2
+script: ./kobaltw assemble --log 3
 
