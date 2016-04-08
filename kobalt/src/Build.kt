@@ -39,8 +39,8 @@ val kotlinAndroid = project {
     directory = name
 
     android {
-        compileSdkVersion = "17"
-        buildToolsVersion = "21.1.2"
+        compileSdkVersion = "23"
+        buildToolsVersion = "23.0.1"
         applicationId = "codepath.apps.demointroandroid"
     }
 
