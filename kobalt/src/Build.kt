@@ -53,6 +53,67 @@ val kotlinAndroid = project {
     }
 }
 
+/**
+ * An Android project defining build types and project flavors.
+ */
+val androidFlavors = project {
+
+    name = "androidFlavors"
+    group = "com.example"
+    artifactId = name
+    version = "0.1"
+    directory = name
+
+    android {
+        compileSdkVersion = "23"
+        buildToolsVersion = "23.0.1"
+        applicationId = "com.beust.kobalt.android.helloworld"
+
+//        signingConfig("release") {
+//            storeFile = homeDir(".android", "debug.keystore")
+//            storePassword = "android"
+//            keyAlias = "androiddebugkey"
+//            keyPassword = "android"
+//        }
+    }
+
+    productFlavor("free") {
+        buildConfig {
+            field("String", "freeField", "\"The free field\"")
+        }
+    }
+
+    productFlavor("pro") {
+        buildConfig {
+            field("String", "proField", "\"The pro field\"")
+        }
+    }
+
+    buildType("debug") {
+        buildConfig {
+            field("String", "debugField", "\"The debug field\"")
+        }
+    }
+
+    buildType("release") {
+        minifyEnabled = true
+//        proguardFile = getDefaultProguardFile("proguard-android.txt")
+
+        buildConfig {
+            field("String", "releaseField", "\"The release field\"")
+        }
+    }
+
+    dependencies {
+        compile("com.android.support:appcompat-v7:aar:23.0.1"
+                ,"com.android.support:design:aar:23.0.1"
+        )
+    }
+
+    javaCompiler {
+        args("-source", "1.6", "-target", "1.6")
+    }
+}
 
 /**
  * A project with flavors.
