@@ -21,9 +21,9 @@ object Versions {
 /**
  * A simple Android project.
  */
-val simpleJavaAndroid = project {
+val androidJavaSimple = project {
 
-    name = "simpleJavaAndroid"
+    name = "androidJavaSimple"
     group = "com.example"
     artifactId = name
     version = "0.1"
@@ -39,9 +39,9 @@ val simpleJavaAndroid = project {
 /**
  * An advanced Java Android project.
  */
-val advancedJavaAndroid = project {
+val androidJavaAdvanced = project {
 
-    name = "advancedJavaAndroid"
+    name = "androidJavaAdvanced"
     group = "com.example"
     artifactId = name
     version = "0.1"
