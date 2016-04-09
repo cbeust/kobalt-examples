@@ -2,6 +2,7 @@ cache:
     directories:
     - $HOME/.m2
     - $HOME/.kobalt
+    - $HOME/.android-sdk
 
 language: java
 
@@ -10,7 +11,7 @@ jdk:
 
 install: true
 
-script: ./kobaltw --log 2 androidJavaSimple:assemble
+script: ./kobaltw --log 3 androidJavaSimple:assemble
 
 # advancedJavaAndroid:assemble androidFlavors:assembleFreeDebug flavors:assemble mixed:assemble 
 
