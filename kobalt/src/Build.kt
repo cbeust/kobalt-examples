@@ -1,5 +1,6 @@
 import com.beust.kobalt.*
 import com.beust.kobalt.api.*
+import com.beust.kobalt.plugin.application.*
 import com.beust.kobalt.plugin.packaging.*
 import com.beust.kobalt.plugin.android.*
 import com.beust.kobalt.plugin.java.*
@@ -195,4 +196,38 @@ val webService = project {
     }
 }
 */
+
+/**
+ * Annotation processor and example. Run it with "./kobaltw sample:run".
+ */
+val annotationProcessor = project {
+    name = "processor"
+    version = "0.1"
+    directory = "apt/$name"
+
+    dependencies {
+        compile("com.squareup:javapoet:1.7.0")
+    }
+
+    assemble {
+        jar {
+        }
+    }
+}
+
+val annotationProcessorExample = project(annotationProcessor) {
+    name = "sample"
+    version = "0.1"
+    directory = "apt/$name"
+
+    assemble {
+        jar {
+        }
+    }
+
+    application {
+        mainClass = "com.example.Main"
+    }
+}
+
 
