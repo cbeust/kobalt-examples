@@ -5,9 +5,9 @@ import com.beust.kobalt.plugin.android.*
 import com.beust.kobalt.plugin.java.*
 
 val pl = plugins(
-    "com.beust:kobalt-android:0.81"
-//    file(homeDir("kotlin/kobalt-android/kobaltBuild/libs/kobalt-android-0.81.jar"))
-    )
+    "com.beust:kobalt-android:0.91"
+//    file(homeDir("kotlin/kobalt-android/kobaltBuild/libs/kobalt-android-0.91.jar"))
+)
 
 object Versions {
     val compileSdk = "23"
@@ -39,6 +39,7 @@ val androidJavaSimple = project {
 /**
  * An advanced Java Android project.
  */
+/*
 val androidJavaAdvanced = project {
 
     name = "androidJavaAdvanced"
@@ -60,6 +61,7 @@ val androidJavaAdvanced = project {
     assemble {
     }
 }
+*/
 
 /**
  * An Android project defining build types and project flavors.
