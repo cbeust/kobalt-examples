@@ -39,7 +39,7 @@ public class Processor extends AbstractProcessor {
     @Override
     public boolean process(Set<? extends TypeElement> annotations, RoundEnvironment roundEnv) {
 
-        List<Element> annotatedElements = new LinkedList<>();
+        List<Element> annotatedElements = new LinkedList<Element>();
 
         for (Element annotatedElement : roundEnv.getElementsAnnotatedWith(Example.class)) {
             if (annotatedElement.getKind() != ElementKind.CLASS) {

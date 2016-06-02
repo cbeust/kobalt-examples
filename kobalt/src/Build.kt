@@ -198,10 +198,10 @@ val webService = project {
 */
 
 /**
- * Annotation processor and example. Run it with "./kobaltw sample:run".
+ * Annotation processor and example in Java. Run it with "./kobaltw aptSample:run".
  */
 val annotationProcessor = project {
-    name = "processor"
+    name = "aptProcessor"
     version = "0.1"
     directory = "apt/$name"
 
@@ -216,7 +216,7 @@ val annotationProcessor = project {
 }
 
 val annotationProcessorExample = project(annotationProcessor) {
-    name = "sample"
+    name = "aptSample"
     version = "0.1"
     directory = "apt/$name"
 
@@ -229,5 +229,44 @@ val annotationProcessorExample = project(annotationProcessor) {
         mainClass = "com.example.Main"
     }
 }
+
+
+/**
+ * Annotation processor and example in Kotlin. Run it with "./kobaltw aptSampleKotlin:run".
+ */
+
+/** WORK IN PROGRESS
+
+val annotationProcessorKotlin = project {
+    name = "aptProcessorKotlin"
+    version = "0.1"
+    directory = "aptKotlin/$name"
+
+    dependencies {
+        compile("com.squareup:javapoet:1.7.0")
+    }
+
+    assemble {
+        jar {
+        }
+    }
+}
+
+val annotationProcessorExampleKotlin = project(annotationProcessor) {
+    name = "aptSampleKotlin"
+    version = "0.1"
+    directory = "aptKotlin/$name"
+
+    assemble {
+        jar {
+        }
+    }
+
+    application {
+        mainClass = "com.example.Main"
+    }
+}
+
+*/
 
 
