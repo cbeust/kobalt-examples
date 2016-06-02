@@ -49,7 +49,7 @@ Then launch the app called "Kobalt Helloworld" on your device. Other targets of 
 # `processor` and `sample`
 
 Illustrate how to run an annotation processor with Kobalt. All you need to do is declare that your project depends on the annotation
-processor project and Kobalt will automatically run the annotation processor before building your project.
+processor project and Kobalt will automatically run the annotation processor before building your project. This example was written by Sargun Vohra.
 
 See it in action with: `./kobaltw sample:run`.
 
