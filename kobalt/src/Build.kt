@@ -1,13 +1,14 @@
 import com.beust.kobalt.*
 import com.beust.kobalt.api.*
 import com.beust.kobalt.plugin.application.*
+import com.beust.kobalt.plugin.apt.*
 import com.beust.kobalt.plugin.packaging.*
 import com.beust.kobalt.plugin.android.*
 import com.beust.kobalt.plugin.java.*
 
 val pl = plugins(
-    "com.beust:kobalt-android:0.91"
-//    file(homeDir("kotlin/kobalt-android/kobaltBuild/libs/kobalt-android-0.91.jar"))
+    "com.beust:kobalt-android:0.92"
+//    file(homeDir("kotlin/kobalt-android/kobaltBuild/libs/kobalt-android-0.93.jar"))
 )
 
 object Versions {
