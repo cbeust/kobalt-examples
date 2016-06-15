@@ -53,4 +53,9 @@ processor project and Kobalt will automatically run the annotation processor bef
 
 See it in action with: `./kobaltw aptSample:run`.
 
+# `rubik`
+
+Illustrate how to build a project with native libraries. This build is using the `native()` directive to specify the three native LibJWGL libraries it uses and then a simple `kobaltw rubik:run` will take care of running the Rubik application with all the paths correctly configured.
+
+
 

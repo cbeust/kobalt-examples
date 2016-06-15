@@ -18,6 +18,7 @@ object Versions {
     val appCompat = "23.0.1"
     val appCompatV7 = "23.0.1"
     val design = "23.0.1"
+    val lwjgl = "2.9.3"
 }
 
 /**
@@ -268,6 +269,40 @@ val annotationProcessorExampleKotlin = project(annotationProcessor) {
     }
 }
 
-*/
+/**
+ * Using native libraries
+ */
+
+val MAIN_CLASS = "com.oskar.rubik.Main"
+
+val rubik = project {
+    name = "rubik"
+    group = "com.beust"
+    artifactId = name
+    version = "0.0.1"
+    directory = name
+
+    dependencies {
+        compile("org.lwjgl.lwjgl:lwjgl:${Versions.lwjgl}",
+                "org.lwjgl.lwjgl:lwjgl_util:${Versions.lwjgl}")
+        native(
+                "org.lwjgl.lwjgl:lwjgl-platform:jar:natives-windows:${Versions.lwjgl}",
+                "org.lwjgl.lwjgl:lwjgl-platform:jar:natives-linux:${Versions.lwjgl}",
+                "org.lwjgl.lwjgl:lwjgl-platform:jar:natives-osx:${Versions.lwjgl}"
+        )
+    }
+
+    assemble {
+        jar {
+            manifest {
+                attributes("Main-Class", MAIN_CLASS)
+            }
+        }
+    }
+
+    application {
+        mainClass = MAIN_CLASS
+    }
+}
 
 
