@@ -285,8 +285,8 @@ val rubik = project {
     dependencies {
         compile("org.lwjgl.lwjgl:lwjgl:${Versions.lwjgl}",
                 "org.lwjgl.lwjgl:lwjgl_util:${Versions.lwjgl}")
-        native(
-                "org.lwjgl.lwjgl:lwjgl-platform:jar:natives-windows:${Versions.lwjgl}",
+
+        native("org.lwjgl.lwjgl:lwjgl-platform:jar:natives-windows:${Versions.lwjgl}",
                 "org.lwjgl.lwjgl:lwjgl-platform:jar:natives-linux:${Versions.lwjgl}",
                 "org.lwjgl.lwjgl:lwjgl-platform:jar:natives-osx:${Versions.lwjgl}"
         )
