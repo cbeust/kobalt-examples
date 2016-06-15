@@ -268,6 +268,7 @@ val annotationProcessorExampleKotlin = project(annotationProcessor) {
         mainClass = "com.example.Main"
     }
 }
+*/
 
 /**
  * Using native libraries
