@@ -13,10 +13,10 @@ val pl = plugins(
 
 object Versions {
     val compileSdk = "23"
-    val supportV4 = "23.0.1"
-    val buildTools = "23.0.1"
-    val appCompat = "23.0.1"
-    val appCompatV7 = "23.0.1"
+    val supportV4 = "23.0.2"
+    val buildTools = "23.0.2"
+    val appCompat = "23.0.2"
+    val appCompatV7 = "23.0.2"
     val design = "23.0.1"
     val lwjgl = "2.9.3"
 }
