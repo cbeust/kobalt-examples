@@ -1,8 +1,9 @@
 kobaltBuild
 javaBuild
 .kobalt
-.idea/workspace.xml
-.idea/tasks.xml
+.idea/
+lib/kotlin-*
+*.iml
 out
 gen
 .DS_Store
